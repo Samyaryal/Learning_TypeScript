@@ -43,3 +43,10 @@ for (let  i = 0; i <words.length; i++) {
     foundword  = true;
   }
 }
+
+//variable whose type cannot be iinferred correctly 
+let numbers = [-10, -20, 10 ];
+let numberAboveZero: boolean | number = false; 
+for (let i = 0; i <numbers.length; i++){
+  numberAboveZero = numbers[i];
+}
